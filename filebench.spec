@@ -1,4 +1,5 @@
 Summary:	Filesystem benchmark
+Summary(pl.UTF-8):	Test wydajności systemu plików
 Name:		filebench
 Version:	1.64
 Release:	0.1
@@ -24,6 +25,21 @@ Filebench uses loadable workload personalities in a common framework
 to allow easy emulation of complex applications upon file systems. The
 workload personalities use a Workload Definition Language to define
 the workload's model.
+
+%description -l pl.UTF-8
+Filebench jest szybki do uruchomienia i użycia, w przeciwieństwie do
+wielu komercyjnych testów wydajności, które może emulować. Jest także
+podręcznym narzędziem do prostych testów wydajności podsystemów
+przechowywania danych i sprawdzania zależności złożonych aplikacji,
+takich jak relacyjne bazy danych, od przechowywania danych bez
+potrzeby ponoszenia kosztów uruchamiania tych aplikacji, wczytywania
+danych itd.
+
+Filebench wykorzystuje ładowalne osobowości obciążenia w ogólnym
+szkielecie, co pozwala na łatwą emulację złożonych aplikacji na
+systemach plików. Osobowości obciążenia wykorzystują specjalny język
+definicji obciążenia (Worlload Definition Language) do definiowania
+modelu obciążeń.
 
 %prep
 %setup -q
