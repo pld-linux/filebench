@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/filebench/%{name}-%{version}-alpha-src.tar.gz
 URL:		http://www.solarisinternals.com/wiki/index.php/FileBench
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	bison
 BuildRequires:	gsl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,6 +50,7 @@ modelu obciążeń.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
+YACC="bison -y" \
 %configure
 %{__make}
 
